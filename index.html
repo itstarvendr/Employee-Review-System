@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Peer Feedback Hub</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Peer Feedback Hub</h1>
+  </header>
+
+  <div id="main-content">
+    <!-- Feedback submission form -->
+    <form id="feedback-form">
+      <label for="feedback-recipient">Recipient:</label>
+      <select id="feedback-recipient" required>
+        <option value="">Select recipient</option>
+        <!-- Populate recipient list dynamically -->
+      </select>
+
+      <label for="feedback-content">Feedback:</label>
+      <textarea id="feedback-content" rows="5" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <!-- Feedback list -->
+    <div id="feedback-list">
+      <!-- Display feedback dynamically -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
